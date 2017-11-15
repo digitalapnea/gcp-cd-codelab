@@ -3,6 +3,6 @@ steps:
     args: ["install", "github.com/digitalapnea/gcp-cd-codelab"]
     env: ["PROJECT_ROOT=github.com/digitalapnea/gcp-cd-codelab"]
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/lively-clover-168508/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
+    args: ["build", "-t", "gcr.io/coreya-kube/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
-  - "gcr.io/lively-clover-168508/gcp-cd-codelab:$REVISION_ID"
+  - "gcr.io/coreya-kube/gcp-cd-codelab:$REVISION_ID"
